@@ -1,0 +1,18 @@
+/* ===================================== */
+/* Variáveis e Configurações Globais   */
+/* ===================================== */
+:root {
+  /* Cores */
+  --color-theme-primary: #ff00ff;
+  --color-theme-secondary: #00ffff;
+  --color-theme-tertiary: #bc13fe;
+  --color-bg-dark: #050510;
+  --color-bg-card: #121225;
+  --color-white: #e0e0e0;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
+  font-family: var(--font-family-base);
+}
