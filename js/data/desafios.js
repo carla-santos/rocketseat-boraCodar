@@ -4,6 +4,7 @@ export const desafios = [
     title: 'Player de música',
     subtitle: 'Desafio #01',
     image: '../../assets/img/desafio01-player-de-musica.png',
+    alt: 'Projeto de um player de música, apresenta a capa do disco, nome da música, nome da banca e o tempo de reprodução" class="card-image',
     techs: ['html', 'css', 'js'],
     repoLink: '#',
     liveLink: '#',
