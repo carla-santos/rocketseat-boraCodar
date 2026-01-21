@@ -19,6 +19,11 @@ body {
   background-color: var(--color-bg-dark);
   color: var(--color-white);
   font-family: var(--font-family-base);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ===================================== */
@@ -38,3 +43,7 @@ body {
   color: #fff;
   text-shadow: 2px 2px var(--color-theme-primary), -2px -2px var(--color-theme-secondary);
 }
+
+/* ===================================== */
+/*              Cards                     */
+/* ===================================== */

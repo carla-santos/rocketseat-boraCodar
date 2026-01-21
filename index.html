@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <div class="container mx-auto px-4 py-12">
+  <div class="container mx-auto px-4 py-12 relative z-10 flex-grow">
     <header class="text-center mb-16">
       <div class="glitch-wrapper mb-4">
         <h1 class="heading-primary text-4xl md:text-5xl uppercase tracking-widest glitch-text">
@@ -37,10 +37,10 @@
     </header>
 
     <!-- Grid de desafios -->
-    <main class="">
+    <main data-id="desafio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <!-- Injetado via JS -->
-      <article data-id="desafio-grid" class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-
+      <article class="text-center w-full col-span-3 text-2xl animate-pulse">
+        Inicializando desafios...
       </article>
     </main>
   </div>
