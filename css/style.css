@@ -96,8 +96,8 @@ body {
 /*              Cards                     */
 /* ===================================== */
 .card {
-	background: var(--card-bg);
-	border: 2px solid var(--neon-purple);
+	background: var(--color-bg-card);
+	border: 2px solid var(--color-theme-tertiary);
 	box-shadow: 0 0 10px rgba(188, 19, 254, 0.2);
 	transition: all 0.4s ease;
 	position: relative;
@@ -110,13 +110,12 @@ body {
 	box-shadow:
 		0 0 25px var(--neon-purple),
 		inset 0 0 15px rgba(0, 255, 255, 0.1);
-	border-color: var(--neon-blue);
+	border-color: var(--color-theme-secondary);
 }
 
 .card-image-container {
-	height: 200px;
 	overflow: hidden;
-	border-bottom: 2px solid var(--neon-purple);
+	border-bottom: 2px solid var(--color-theme-tertiary);
 	position: relative;
 }
 
@@ -135,7 +134,7 @@ body {
 
 .card-content {
 	padding: 1.5rem;
-	background: linear-gradient(to top, var(--card-bg) 90%, transparent);
+	background: linear-gradient(to top, var(--color-bg-card) 90%, transparent);
 }
 
 /* ===================================== */
@@ -143,8 +142,8 @@ body {
 /* ===================================== */
 .btn-retro {
 	background: transparent;
-	border: 2px solid var(--neon-blue);
-	color: var(--neon-blue);
+	border: 2px solid var(--color-theme-secondary);
+	color: var(--color-theme-secondary);
 	text-transform: uppercase;
 	font-family: 'VT323', monospace;
 	font-size: 1.2rem;
@@ -155,23 +154,23 @@ body {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.5rem;
-	box-shadow: 0 0 5px var(--neon-blue);
+	box-shadow: 0 0 5px var(--color-theme-secondary);
 }
 
 .btn-retro:hover {
-	background: var(--neon-blue);
+	background: var(--color-theme-secondary);
 	color: #000;
-	box-shadow: 0 0 20px var(--neon-blue);
+	box-shadow: 0 0 20px var(--color-theme-secondary);
 }
 
 .btn-retro-secondary {
-	border-color: var(--neon-pink);
-	color: var(--neon-pink);
-	box-shadow: 0 0 5px var(--neon-pink);
+	border-color: var(--color-theme-primary);
+	color: var(--color-theme-primary);
+	box-shadow: 0 0 5px var(--color-theme-primary);
 }
 
 .btn-retro-secondary:hover {
-	background: var(--neon-pink);
-	color: white;
-	box-shadow: 0 0 20px var(--neon-pink);
+	background: var(--color-theme-primary);
+	color: #fff;
+	box-shadow: 0 0 20px var(--color-theme-primary);
 }
