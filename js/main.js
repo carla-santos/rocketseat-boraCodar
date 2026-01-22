@@ -1,17 +1,17 @@
 import { desafios } from './data/desafios.js';
 
 function updateView() {
-  // 1. Renderizar cards
-  const gridContainer = document.querySelector('[data-id="desafio-grid"]');
+	// 1. Renderizar cards
+	const gridContainer = document.querySelector('[data-id="desafio-grid"]');
 
-  const cardsHTML = desafios
-    .map((desafio) => {
-      const { title, subtitle, image, alt, repoLink, liveLink } = desafio;
+	const cardsHTML = desafios
+		.map((desafio) => {
+			const { title, subtitle, image, alt, repoLink, liveLink } = desafio;
 
-      const card = document.createElement('div');
-      card.classList.add('card group opacity-0 translate-y-8');
+			const card = document.createElement('div');
+			card.classList.add('card', 'group', 'opacity-0', 'translate-y-8');
 
-      return `
+			return `
         <div class="card-image-container">
           <img src="${image}" alt="${alt}">
           <div class="absolute inset-0 bg-purple-900/30 group-hover:bg-transparent transition-all duration-300"></div>
@@ -40,10 +40,10 @@ function updateView() {
           </div>
         </div>
       `;
-    })
-    .join('');
+		})
+		.join('');
 
-  gridContainer.innerHTML = cardsHTML;
+	gridContainer.innerHTML = cardsHTML;
 }
 
 document.addEventListener('DOMContentLoaded', updateView);
