@@ -1,8 +1,5 @@
 export function renderPaginationControls(container, currentPage, totalPages, onPageChange) {
-	console.log(container);
-	console.log(currentPage); // 1
-	console.log(totalPages); // 2
-
+	container.innerHTML = '';
 	if (totalPages <= 1) return;
 
 	const createButton = (content, isDisabled, onClick, additionalClasses = '') => {

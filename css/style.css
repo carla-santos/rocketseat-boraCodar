@@ -196,3 +196,59 @@ body {
 .fa-js {
 	color: #f0db4f;
 }
+
+/* ===================================== */
+/*              Paginação                */
+/* ===================================== */
+.pagination-container {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 3rem;
+	flex-wrap: wrap;
+}
+
+.page-btn {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid var(--color-theme-tertiary);
+	color: var(--color-theme-tertiary);
+	background: transparent;
+	font-family: var(--font-family-heading);
+	font-size: 0.8rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	box-shadow: 0 0 5px var(--color-theme-tertiary);
+}
+
+.page-btn:hover:not(:disabled) {
+	background: var(--color-theme-tertiary);
+	color: #fff;
+	box-shadow: 0 0 15px var(--color-theme-tertiary);
+	transform: scale(1.1);
+}
+
+.page-btn.active {
+	background: var(--color-theme-secondary);
+	border-color: var(--color-theme-secondary);
+	color: #000;
+	box-shadow: 0 0 20px var(--color-theme-secondary);
+	cursor: default;
+	transform: scale(1.1);
+}
+
+.page-btn:disabled {
+	border-color: #333;
+	color: #555;
+	box-shadow: none;
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.page-nav-btn {
+	width: auto;
+	padding: 0 1rem;
+}
