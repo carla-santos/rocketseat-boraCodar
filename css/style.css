@@ -174,3 +174,24 @@ body {
 	color: #fff;
 	box-shadow: 0 0 20px var(--color-theme-primary);
 }
+
+/* ===================================== */
+/*              Icons                    */
+/* ===================================== */
+.tech-icon {
+	font-size: 1.5rem;
+	margin-right: 0.8rem;
+	transition: transform 0.3s;
+}
+.tech-icon:hover {
+	transform: scale(1.2);
+}
+.fa-html5 {
+	color: #e34c26;
+}
+.fa-css3-alt {
+	color: #264de4;
+}
+.fa-js {
+	color: #f0db4f;
+}
