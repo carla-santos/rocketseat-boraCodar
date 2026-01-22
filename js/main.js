@@ -21,17 +21,34 @@ function updateView() {
 		const cardNode = createDesafiosCard(desafio, index);
 		gridContainer.appendChild(cardNode);
 	});
+
+	// 3. Renderizar Controles de Paginação
+	renderPaginationControls(paginationContainer, currentPage, totalPages, handlePageChange);
 }
 
-// Estilo de animação
-const styleSheet = document.createElement('style');
-styleSheet.innerText = `
-  @keyframes fadeInUp {
-    to { 
-      opacity: 1; transform: translateY(0); 
-    }
-  }
-`;
-document.head.appendChild(styleSheet);
+function handlePageChange(newPage) {
+	currentPage = newPage;
+	updateView();
 
-document.addEventListener('DOMContentLoaded', updateView);
+	// Scroll suave
+	const header = document.querySelector('header');
+	if (header) {
+		const gridTop = header.getBoundingClientRect().bottom + window.scrollY;
+		window.scrollTo({ top: gridTop - 50, behavior: 'smooth' });
+	}
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	// Estilo de animação
+	const styleSheet = document.createElement('style');
+	styleSheet.innerText = `
+    @keyframes fadeInUp {
+      to { 
+        opacity: 1; transform: translateY(0); 
+      }
+    }
+  `;
+	document.head.appendChild(styleSheet);
+
+	updateView();
+});
