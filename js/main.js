@@ -22,7 +22,7 @@ function updateView() {
 
 		card.innerHTML = `
       <div class="card-image-container">
-        <img src="${image}" alt="${alt}">
+        <img src="${image}" alt="${alt}" class="card-image">
         <div class="absolute inset-0 bg-purple-900/30 group-hover:bg-transparent transition-all duration-300"></div>
       </div>
 

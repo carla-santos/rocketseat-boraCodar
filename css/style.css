@@ -76,7 +76,8 @@ body {
 /*         Tipografia e Glitch            */
 /* ===================================== */
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.retro-font {
 	font-family: var(--font-family-heading);
 }
 
@@ -108,7 +109,7 @@ body {
 .card:hover {
 	transform: translateY(-10px);
 	box-shadow:
-		0 0 25px var(--neon-purple),
+		0 0 25px var(--color-theme-tertiary),
 		inset 0 0 15px rgba(0, 255, 255, 0.1);
 	border-color: var(--color-theme-secondary);
 }
