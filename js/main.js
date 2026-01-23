@@ -1,6 +1,6 @@
 import { desafios } from './data/desafios.js';
-import { createDesafiosCard } from './components/ProjectCard.js';
-import { renderPaginationControls } from './components/Pagination.js';
+import { createDesafiosCard } from './components/projectCard.js';
+import { renderPaginationControls } from './components/pagination.js';
 
 const ITEMS_PER_PAGE = 6;
 let currentPage = 1;
