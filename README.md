@@ -7,7 +7,7 @@
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/carla-santos/rocketseat-boraCodar?style=flat-square&color=7159c1">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/carla-santos/rocketseat-boraCodar?style=flat-square&color=7159c1">
   <img alt="Issues" src="https://img.shields.io/github/issues/carla-santos/rocketseat-boraCodar?style=flat-square&color=7159c1">
-  <img alt="License" src="https://img.shields.io/github/license/carla-santos/rocketseat-boraCodar?style=flat-square&color=7159c1">
+  <img alt="License" src="https://img.shields.io/github/license/carla-santos/rocketseat-boraCodar">
 </p>
 
 <br>
